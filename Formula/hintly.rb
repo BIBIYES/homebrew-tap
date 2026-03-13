@@ -1,25 +1,25 @@
 class Hintly < Formula
   desc "AI command assistant for terminal"
   homepage "https://github.com/BIBIYES/Hintly"
-  version "1.0.3"
+  version "2.0.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/BIBIYES/Hintly/releases/download/v#{version}/hint_v#{version}_darwin-arm64.tar.gz"
-      sha256 "06b671cc9f067774d052ef8fcd27ba125e4457e93de94af6cf77b348e12f79c6"
+      sha256 "4f21478a5e2efb2133cf26dc0e8d62932577f6f7964ac901e2cd9bd4a6051f05"
     else
       url "https://github.com/BIBIYES/Hintly/releases/download/v#{version}/hint_v#{version}_darwin-amd64.tar.gz"
-      sha256 "5e261c8fb7229b65277482cb8092b0ad19815e92a97edb21f94ee67225563f90"
+      sha256 "3869588c729a2beb5e87cf40f23f8090a33f554a34cdf84e98a02a9528b22987"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/BIBIYES/Hintly/releases/download/v#{version}/hint_v#{version}_linux-arm64.tar.gz"
-      sha256 "6fbe78c1c200f094c28120fc5d93a142079fa1161634bdb32c20493d9ecb9605"
+      sha256 "6ddaa97d5751c8f27b4a1769af8924a968c07e0c43753e47a546672531b71474"
     else
       url "https://github.com/BIBIYES/Hintly/releases/download/v#{version}/hint_v#{version}_linux-amd64.tar.gz"
-      sha256 "7f22d625e56184c6368c3553b7c894ebd03a9cdfd1ee0400e6a44f5e83a10eaa"
+      sha256 "f42a444b2b8a6f79cc1f3417a935997ee00d5b6da2eed8f03ce3f7c152d1123a"
     end
   end
 
